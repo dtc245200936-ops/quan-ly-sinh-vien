@@ -1,0 +1,46 @@
+/* --- 1. Reset thuộc tính cơ bản --- */
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* --- 2. Khung chứa (Container) - CÂN GIỮA CỐT LÕI --- */
+.container {
+  min-height: 100vh;           /* Chiều cao tối thiểu bằng 100% khung nhìn màn hình */
+  
+  /* 3 DÒNG CSS CỐT LÕI CỦA FLEXBOX: */
+  display: flex;                /* Biến container thành Flex Container */
+  justify-content: center;      /* Căn giữa phần tử con theo trục ngang (Main Axis) */
+  align-items: center;          /* Căn giữa phần tử con theo trục dọc (Cross Axis) */
+  
+  background-color: #f0f2f5;
+}
+
+/* --- 3. Trang trí Thẻ thông báo (Card) --- */
+.center-card {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ cho thẻ */
+  text-align: center;                         /* Căn giữa chữ trong thẻ */
+  max-width: 400px;                           /* Giới hạn chiều rộng tối đa */
+  width: 90%;                                 /* Co giãn mượt mà trên điện thoại */
+}
+
+.center-card h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.center-card p {
+  margin-bottom: 0;
+  color: #666;
+}
